@@ -20,10 +20,10 @@ body{
 }
 
 .apresentacao{
+    width: 60vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
 }
 .apresentacao__conteudo{
     width: 615px;
@@ -40,6 +40,7 @@ body{
 .apresentacao__conteudo__texto{
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
+    text-align: justify;
 }
 
 .apresentacao__links{
@@ -61,7 +62,6 @@ body{
     color: #F6F6F6;
     width: 378px;
     border-radius: 8px;
-    text-align: center;
     font-size: 24px;
     font-weight: 600;
     padding: 21.5px 0;
@@ -70,11 +70,22 @@ body{
     display: flex;
     justify-content: center;
     align-items: baseline;
-    gap: 8px;
+    gap: 16px;
 }
 
+.apresentacao__links__link:hover{
+    background-color: #272727;
+    transform: scale(1.1);
+}
 
 .link__img{
     position: relative;
     top: 4px;
+}
+
+.img__perfil{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 4px solid #22D4FD;
 }
