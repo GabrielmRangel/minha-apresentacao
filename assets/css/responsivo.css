@@ -1,59 +1,50 @@
-
-@media screen and (max-width: 1024px) {
-    .container{
-        flex-direction: column;
-        margin-top: 2em;
-        position: static;
-        transform: translate(0%, 0%);
+@media screen and (max-width: 1023px) {
+    .apresentacao{
+        flex-direction: column-reverse;
     }
 
-    .container__descricao{
-        margin: 0 3vw;
+    .cabecalho{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
     }
 
-    .container__titulo{
-        height: auto;
-        font-size: 2em;
-        line-height: 1.3em;
-        margin: 0 4vw;
+    .cabecalho__menu__label{
+        align-self: stretch;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .container__img--mobile{
-        background-image: url("../img/imagem.png");
+    .cabecalho__menu--hamburguer{
+        background-image: url("../img/menu-fechado.svg");
         background-repeat: no-repeat;
-        background-size: contain;
-        height: 46vh;
-        margin: 0 1.5em;
+        background-size: cover;
+        background-position: center;
+        width: 36px;
+        height: 36px;
+        display: inline-block;
     }
 
-    .container__texto{
-        height: auto;
-        font-size: 1.5em;
-        line-height: 1.6em;
-        margin: 0 1em;
+    .cabecalho__menu__botao--input:checked ~ .cabecalho__menu__label{
+        background-color: var(--cor-terciaria);
     }
 
-    .container__botoes{
-        flex-direction: column;
-        margin-bottom: 4em;
+    .cabecalho__menu__botao--input:checked ~ .cabecalho__menu__label > .cabecalho__menu--hamburguer{
+        background-image: url("../img/menu.svg");
     }
 
-    .botao__link{
-        font-size: 1em;
-        padding: 0.5em;
+    .cabecalho__menu{
+        margin: auto;
     }
 
-    .container__img{
-        display: none;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .container__botoes{
-        flex-direction: row;
+    .img__perfil{
+        align-self: center;
+        position: static;
+        margin: 2rem 0;
     }
 
-    .botao__link{
-        font-size: 22px;
-    }
+    
 }
