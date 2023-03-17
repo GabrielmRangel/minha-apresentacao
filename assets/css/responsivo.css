@@ -54,7 +54,7 @@
 
     .cabecalho__menu__link:hover{
         border-bottom: none;
-        color: var(--cor-primaria);
+        color: var(--cor-secundaria);
         background-color: var(--cor-terciaria);
     }
 
@@ -89,7 +89,7 @@
     }
 
     .apresentacao__conteudo__titulo{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         line-height: 1.8rem;
     }  
 
