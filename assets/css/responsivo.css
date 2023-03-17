@@ -1,18 +1,14 @@
 @media screen and (max-width: 1023px) {
-    .apresentacao{
-        flex-direction: column-reverse;
-    }
-
     .cabecalho{
         display: flex;
-        justify-content: space-between;
         align-items: center;
         padding: 0;
+        position: relative;
     }
 
     .cabecalho__menu__label{
         align-self: stretch;
-        padding: 1rem;
+        padding: 0 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -37,14 +33,102 @@
     }
 
     .cabecalho__menu{
-        margin: auto;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        background-color: var(--cor-primaria);
+        gap: 0;
+        left: -100vw;
+        transition: all .3s;
+    }
+
+    .cabecalho__menu__botao--input:checked ~ .cabecalho__menu{
+        left: 0;
+        transition: all .3s;
+    }
+
+    .cabecalho__menu__link{
+        padding: 2rem 4rem;
+    }
+
+    .cabecalho__menu__link:hover{
+        border-bottom: none;
+        color: var(--cor-primaria);
+        background-color: var(--cor-terciaria);
+    }
+
+    .link--ativo{
+        border-bottom: none;
+    }
+
+    .link--mobile{
+        display: block;
+        font-size: 1.6rem;
+        padding: 2rem 1rem;
+        font-family: var(--fonte-primaria);
     }
 
     .img__perfil{
         align-self: center;
         position: static;
         margin: 2rem 0;
+        width: 60%;
+    }  
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        gap: 2rem;
+        width: 80vw;
+        margin-bottom: 14%;
     }
 
-    
+    .apresentacao__conteudo{
+        width: 100%;
+        gap: 1.8rem;
+    }
+
+    .apresentacao__conteudo__titulo{
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+    }  
+
+    .apresentacao__conteudo__subtitulo{
+        font-size: 1.2rem;
+    }  
+
+    .apresentacao__conteudo__texto{
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }  
+
+    .apresentacao__links{
+        gap: 1.4rem;
+    }
+
+    .apresentacao__links__subtitulo{
+        font-size: 1.2rem;
+    }  
+
+    .apresentacao__links__navegacao{
+        font-size: 1.1rem;
+        gap: .6rem;
+    }
+
+    .rodape{
+        font-size: .8rem;
+        color: var(--cor-primaria);
+    }
+
+    /* Página Currículo */
+    .link--curriculo{
+        padding: 0;
+        font-size: 1.1rem;
+    }
+
+    .link--curriculo:hover{
+        background-color: var(--cor-primaria);
+        color: var(--cor-secundaria);
+        text-decoration: underline;
+    }
 }

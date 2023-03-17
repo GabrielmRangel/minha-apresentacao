@@ -4,6 +4,7 @@
     --cor-primaria: #000000;
     --cor-secundaria: #F6F6F6;
     --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -48,6 +49,10 @@ body{
 
 .link--ativo{
     border-bottom: 2px solid var(--cor-terciaria);
+}
+
+.link--mobile{
+    display: none;
 }
 
 .apresentacao{
@@ -106,23 +111,22 @@ body{
     font-family: var(--fonte-secundaria);
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
     gap: 16px;
 }
 
 .apresentacao__links__navegacao:hover{
-    background-color: #272727;
+    background-color: var(--cor-hover);
     transform: scale(1.1);
 }
 
-.link__img{
+/* .link__img{
     position: relative;
     top: 4px;
-}
+} */
 
 .img__perfil{
     width: 35%;
-    /* height: 30%; */
     border-radius: 50%;
     border: 4px solid var(--cor-terciaria);
     align-self: flex-start;
